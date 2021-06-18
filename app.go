@@ -11,14 +11,14 @@ import (
 	"github.com/gorilla/mux"
 )
 
-vars usage string := "Welcome to Literature User API\n
+/*vars usage string := "Welcome to Literature User API\n
 						user json : {ID: '"1"', FName: '"Anand"', LName: '"Rajagopalan"', Email: '"anandraj@yahoo.com"'}
 						Usage:\n
 						Return all users (GET) : /users
 						Return a user (GET) : /user/{id}
 						Add a user (POST) : /user
 						Update a user (PUT): /USER/{id}
-						Delete a user (DELETE): /user/{id}"
+						Delete a user (DELETE): /user/{id}"*/
 
 
 type userProfile struct {
@@ -53,7 +53,7 @@ func handleRequests() {
 }
 
 func homePage(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, usage)
+	fmt.Fprintf(w, "Welcome!\n")
 }
 
 func returnalAllUsers(w http.ResponseWriter, r *http.Request) {
