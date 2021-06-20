@@ -9,6 +9,9 @@ import (
 	"io/ioutil"
 
 	"github.com/gorilla/mux"
+	userdb "github.com/anandraj-coder/UserAPI/DB"
+	
+	
 )
 
 /*vars usage string := "Welcome to Literature User API\n
@@ -53,7 +56,8 @@ func handleRequests() {
 }
 
 func homePage(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Welcome!\n")
+	var output = userdb.InitUser()
+	fmt.Fprintf(w, output)
 }
 
 func returnalAllUsers(w http.ResponseWriter, r *http.Request) {
