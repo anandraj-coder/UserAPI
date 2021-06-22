@@ -40,7 +40,7 @@ func main() {
 		{ID: "4", FName: "Brian", LName: "Thomson", Email: "jayanalak@hotmail.com"},
 		{ID: "5", FName: "Gary", LName: "Mccormick", Email: "blah@hotmail.com"},
 		{ID: "6", FName: "Arvind", LName: "Reddy", Email: "blah@hotmail.com"},
-		{ID: "6"=7, FName: "Jeremy", LName: "Diemer", Email: "blah@hotmail.com"},
+		{ID: "7", FName: "Jeremy", LName: "Diemer", Email: "blah@hotmail.com"},
 	}
 	handleRequests()
 }
@@ -55,6 +55,7 @@ func handleRequests() {
 	myRouter.HandleFunc("/user/{id}", updateUser).Methods("PUT")
 	myRouter.HandleFunc("/user/{id}", returnUser)
 	log.Fatal(http.ListenAndServe(addr, myRouter))
+
 }
 
 func homePage(w http.ResponseWriter, r *http.Request) {
