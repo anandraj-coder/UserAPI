@@ -36,7 +36,8 @@ func main() {
 	userProfiles = []userProfile{
 		{ID: "1", FName: "Anand", LName: "Rajagopalan", Email: "anandraj@yahoo.com"},
 		{ID: "2", FName: "Jayashree", LName: "Anand", Email: "jayanalak@hotmail.com"},
-		{ID: "2", FName: "Gavin", LName: "Leo Rhynie", Email: "jayanalak@hotmail.com"},
+		{ID: "3", FName: "Gavin", LName: "Leo Rhynie", Email: "jayanalak@hotmail.com"},
+		{ID: "4", FName: "Brian", LName: "Thomson", Email: "jayanalak@hotmail.com"},
 	}
 	handleRequests()
 }
