@@ -42,6 +42,7 @@ func main() {
 		{ID: "6", FName: "Arvind", LName: "Reddy", Email: "blah@hotmail.com"},
 		{ID: "7", FName: "Jeremy", LName: "Diemer", Email: "blah@hotmail.com"},
 		{ID: "8", FName: "Sanja", LName: "Kotagiri", Email: "blah@hotmail.com"},
+		{ID: "9", FName: "Kazim", LName: "Khan", Email: "blah@hotmail.com"},
 	}
 	handleRequests()
 }
